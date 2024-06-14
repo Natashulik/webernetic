@@ -2,7 +2,6 @@ const validEmail = "test@mail.ru"; // данные для входа
 const validPassword = "test_123"; // данные для входа
 
 // loading form
-
 const modalFormContainer = document.getElementById("modal__form-container");
 
 function loadForm() {
@@ -96,7 +95,6 @@ function initForm() {
   emailInput = document.getElementById("emailInput");
   passwordInput = document.getElementById("passwordInput");
   errorMessage = document.getElementById("errorMessage");
-  // console.log(form);
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
