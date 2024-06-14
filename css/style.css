@@ -24,6 +24,16 @@ body {
   max-width: 1920px;
   padding: 36px 40px;
 }
+@media (max-width: 768px) {
+  .demo__container {
+    padding: 24px;
+  }
+}
+@media (max-width: 400px) {
+  .demo__container {
+    padding: 14px 24px;
+  }
+}
 
 .demo__wrapper {
   display: flex;
@@ -35,10 +45,44 @@ body {
   border-radius: 10px;
   background-color: #ebf0fa;
 }
+@media (max-width: 1440px) {
+  .demo__wrapper {
+    gap: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .demo__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 
 .demo__content {
   flex-basis: 50%;
   padding-left: 72px;
+}
+@media (max-width: 1440px) {
+  .demo__content {
+    padding: auto;
+  }
+}
+@media (max-width: 1300px) {
+  .demo__content {
+    padding: 24px;
+  }
+}
+@media (max-width: 1000px) {
+  .demo__content {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .demo__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 18px;
+  }
 }
 
 .demo__pic {
@@ -50,6 +94,37 @@ body {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 1600px) {
+  .demo__image {
+    min-height: 375px;
+  }
+}
+@media (max-width: 1500px) {
+  .demo__image {
+    min-height: 389px;
+  }
+}
+@media (max-width: 1440px) {
+  .demo__image {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .demo__image {
+    display: block;
+    min-height: 360px;
+  }
+}
+@media (max-width: 768px) {
+  .demo__image {
+    min-height: 0;
+  }
+}
+@media (max-width: 450px) {
+  .demo__image {
+    display: none;
+  }
+}
 
 .demo__image-medium {
   display: none;
@@ -57,12 +132,35 @@ body {
   max-width: 100%;
   height: 100%;
 }
+@media (max-width: 1440px) {
+  .demo__image-medium {
+    display: block;
+  }
+}
+@media (max-width: 1150px) {
+  .demo__image-medium {
+    min-height: 320px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 768px) {
+  .demo__image-medium {
+    display: none;
+  }
+}
 
 .demo__image-mobile {
   display: none;
   width: 100%;
   max-width: 100%;
   height: 100%;
+}
+@media (max-width: 450px) {
+  .demo__image-mobile {
+    display: block;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }
 
 .demo__title {
@@ -72,10 +170,50 @@ body {
   color: #1f4284;
   margin-bottom: 18px;
 }
+@media (max-width: 1440px) {
+  .demo__title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .demo__title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .demo__title {
+    font-size: 17px;
+    margin-bottom: 14px;
+  }
+}
 
 .demo__text {
   max-width: 511px;
   margin-bottom: 36px;
+}
+@media (max-width: 1200px) {
+  .demo__text {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .demo__text {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .demo__text {
+    font-size: 15px;
+    line-height: 160%;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 400px) {
+  .demo__text {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
 }
 
 .demo__button {
@@ -90,6 +228,27 @@ body {
   height: 68px;
   background: #244c98;
 }
+@media (max-width: 1000px) {
+  .demo__button {
+    padding: 10px 10px 10px 18px;
+    width: 261px;
+    height: 56px;
+    gap: 19px;
+  }
+}
+@media (max-width: 400px) {
+  .demo__button {
+    width: 279px;
+    justify-content: space-between;
+    align-self: center;
+  }
+}
+@media (max-width: 350px) {
+  .demo__button {
+    width: 100%;
+    gap: 5px;
+  }
+}
 
 .demo__button-text {
   font-family: "Manrope", sans-serif;
@@ -97,4 +256,39 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 160%;
+}
+@media (max-width: 1000px) {
+  .demo__button-text {
+    font-size: 15px;
+  }
+}
+@media (max-width: 350px) {
+  .demo__button-text {
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .demo__icon-box {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (max-width: 350px) {
+  .demo__icon-box {
+    align-self: center;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .demo__icon {
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .demo__icon {
+    display: block;
+  }
 }
